@@ -294,11 +294,11 @@ def initialize_session_state():
     if 'user_answer' not in st.session_state:
         st.session_state.user_answer = ""
     if 'track' not in st.session_state:
-        st.session_state.track = TRACKS[0]
+        st.session_state.track = TRACKS[1]  # Data Engineer-focused SQL
     if 'difficulty' not in st.session_state:
         st.session_state.difficulty = DIFFICULTY_LEVELS[0]
     if 'dialect' not in st.session_state:
-        st.session_state.dialect = SQL_DIALECTS[0]
+        st.session_state.dialect = SQL_DIALECTS[2]  # Snowflake
 
 
 def render_sidebar():
